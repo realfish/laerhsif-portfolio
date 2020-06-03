@@ -1,0 +1,194 @@
+.index main {
+	position: relative;
+	width   : 100%;
+	height  : 100%;
+}
+
+/*--- Head ---*/
+.index-head {
+	position   : relative;
+	height     : 80vh;
+	font-family: @font-sans;
+}
+.index-head-wrap {
+	position       : relative;
+	top            : 50%;
+	transform      : translateY(-50%);
+	display        : flex;
+	justify-content: space-between;
+	width          : (300px*4 + 8*4);
+	margin         : 0 auto;
+	
+	@media screen and (min-width: 1548px) {
+		width: (300px*5 + 8*5);
+	}
+	@media screen and (max-width: 1240px) {
+		width: (300px*3 + 8*3);
+	}
+	@media screen and (max-width: 932px) {
+		width: (300px*2 + 8*2);
+	}
+}
+
+// Header
+.index-head-title {
+	letter-spacing       : 0.025em;
+	text-transform       : uppercase;
+	font-feature-settings: "cpsp", "pnum", "kern", "liga";
+}
+.index-head-link {
+	display     : flex;
+	padding-left: 1px;
+	margin-top  : 16px;
+}
+.index-head-link-item {
+	display         : block;
+	width           : 10px;
+	height          : 10px;
+	border-radius   : 100%;
+	background-color: @text-main;
+	transform       : scale(1);
+	transition      : transform .25s ease;
+
+	& + & {
+		margin-left: 16px;
+	}
+	
+	.ua-Pointer &:hover,
+	&:active {
+		transform: scale(1.2);
+	}
+}
+
+// Outline
+.index-head-outline-sec {
+	position: relative;
+	
+	& + & {
+		margin-top: 4px;
+	}
+}
+.index-head-outline-title {
+	position             : absolute;
+	top                  : 1px;
+	left                 : -30em;
+	width                : 30em;
+	padding-right        : 8px;
+	box-sizing           : border-box;
+	font-size            : 12px;
+	font-weight          : 600;
+	line-height          : 16px;
+	letter-spacing       : 0.05em;
+	text-align           : right;
+	text-transform       : uppercase;
+	font-feature-settings: "cpsp", "pnum", "kern", "liga";
+	
+	.index-head-outline-sec:last-of-type & {
+		text-transform: none;
+	}
+}
+.index-head-outline-list {
+	display: flex;
+}
+.index-head-outline-item {
+	display         : block;
+	width           : 16px;
+	height          : 16px;
+	border          : 1px solid @text-main;
+	box-sizing      : border-box;
+	background-color: fadeout(@text-main, 100%);
+	transition      : background-color .25s ease;
+
+	& + & {
+		margin-left: 4px;
+	}
+	
+	.ua-Pointer &:hover,
+	&:active {
+		background-color: fadeout(@text-main, 0%);
+	}
+}
+/*--- Head END ---*/
+
+/*--- Archive ---*/
+.index-archive {
+	padding-bottom: 300px;
+	font-family   : @font-sans;
+}
+
+.index-archive-sec {
+	width : (300px*4 + 8*4);
+	margin: 0 auto;
+
+	& + & {
+		margin-top: 32px;
+	}
+	
+	@media screen and (min-width: 1548px) {
+		width: (300px*5 + 8*5);
+	}
+	@media screen and (max-width: 1240px) {
+		width: (300px*3 + 8*3);
+	}
+	@media screen and (max-width: 932px) {
+		width: (300px*2 + 8*2);
+	}
+}
+.index-archive-sectitle {
+	padding              : 0 4px 0 6px;
+	font-size            : 12px;
+	font-weight          : 600;
+	line-height          : 16px;
+	letter-spacing       : 0.05em;
+	text-transform       : uppercase;
+	font-feature-settings: "cpsp", "pnum", "kern", "liga";
+	
+	.index-archive-sec:last-of-type & {
+		text-transform: none;
+	}
+}
+
+.index-archive-list {
+	display  : flex;
+	flex-wrap: wrap;
+}
+.index-archive-item {
+	display         : flex;
+	flex-direction  : column;
+	justify-content : space-between;
+	width           : 300px;
+	height          : 300px;
+	padding         : 22px;
+	border          : 2px solid @text-main;
+	box-sizing      : border-box;
+	margin          : 4px;
+	background-color: fadeout(@text-main, 100%);
+	color           : @text-main;
+	transition      :
+		background-color .25s ease,
+		color            .25s ease;
+	
+	.ua-Pointer &:hover,
+	&:active {
+		color           : @bg-main;
+		background-color: fadeout(@text-main, 0%);
+	}
+}
+
+.index-archive-item-titleEn {
+	font-size  : 24px;
+	line-height: 30px;
+}
+.index-archive-item-titleZh {
+	margin-top : 8px;
+	font-family: @font-hei;
+	font-size  : 16px;
+	font-weight: 500;
+	line-height: 24px;
+}
+.index-archive-item-footer {
+	font-size  : 16px;
+	font-weight: 500;
+	line-height: 20px;
+}
+/*--- Archive END ---*/

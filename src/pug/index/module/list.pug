@@ -1,0 +1,35 @@
+-
+	const _data = dataArchive || [
+		{
+			title: 'The Type · Type is Beautiful',
+			list: [
+				{
+					titleEn:  'The 10th Anniversary',
+					titleZh:  '十周年',
+					category: 'Website',
+					date:     '2017',
+					url:      './2017/tib10/',
+				}, {
+					titleEn:  'TypeDraw',
+					titleZh:  'TypeChat（字谈字畅）播客抽奖',
+					category: 'Web app',
+					date:     '2016',
+					url:      './2016/typedraw/',
+				}
+			],
+		}
+	]
+
+.index-archive
+	each sec in _data
+		section.index-archive-sec
+			h2.index-archive-sectitle= sec.title
+			.index-archive-list
+				each item in sec.list
+					a.index-archive-item(href=item.url)
+						header.index-archive-item-header
+							h3.index-archive-item-titleEn!= item.titleEn
+							p.index-archive-item-titleZh!= item.titleZh
+						footer.index-archive-item-footer
+							p.index-archive-item-category= item.category
+							p.index-archive-item-date= item.date
