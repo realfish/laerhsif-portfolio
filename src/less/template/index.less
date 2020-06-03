@@ -48,7 +48,9 @@
 	border-radius   : 100%;
 	background-color: @text-main;
 	transform       : scale(1);
-	transition      : transform .25s ease;
+	transition      :
+		background-color .25s ease,
+		transform        .25s ease;
 
 	& + & {
 		margin-left: 16px;
@@ -57,6 +59,7 @@
 	.ua-Pointer &:hover,
 	&:active {
 		transform: scale(1.2);
+		background-color: fadeout(@bg-black, 5%);
 	}
 }
 
@@ -96,8 +99,10 @@
 	height          : 16px;
 	border          : 1px solid @text-main;
 	box-sizing      : border-box;
-	background-color: fadeout(@text-main, 100%);
-	transition      : background-color .25s ease;
+	background-color: fadeout(@bg-black, 100%);
+	transition      :
+		border-color     .25s ease,
+		background-color .25s ease;
 
 	& + & {
 		margin-left: 4px;
@@ -105,7 +110,8 @@
 	
 	.ua-Pointer &:hover,
 	&:active {
-		background-color: fadeout(@text-main, 0%);
+		border-color    : fadeout(@bg-black, 5%);
+		background-color: fadeout(@bg-black, 5%);
 	}
 }
 /*--- Head END ---*/
@@ -162,16 +168,18 @@
 	border          : 2px solid @text-main;
 	box-sizing      : border-box;
 	margin          : 4px;
-	background-color: fadeout(@text-main, 100%);
+	background-color: fadeout(@bg-black, 100%);
 	color           : @text-main;
 	transition      :
+		border-color     .25s ease,
 		background-color .25s ease,
 		color            .25s ease;
 	
 	.ua-Pointer &:hover,
 	&:active {
+		border-color    : fadeout(@bg-black, 5%);
 		color           : @bg-main;
-		background-color: fadeout(@text-main, 0%);
+		background-color: fadeout(@bg-black, 5%);
 	}
 }
 
