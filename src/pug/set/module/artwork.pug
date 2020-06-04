@@ -1,0 +1,48 @@
+block setArtworkData
+	-
+		const dataArtwork = [
+			{
+				caption: 'Screen captures',
+				list: [
+					{
+						title: 'Screenshot 1',
+						file:  'screenshot-1-alt.png',
+					}, {
+						title: 'Screenshot 2',
+						file:  'screenshot-2.png',
+					}
+				],
+			}, {
+				caption : 'Responsive typography',
+				list: [
+					//- {
+					//- 	title: 'Responsive typography',
+					//- 	file:  'responsive-typography.png',
+					//- }, {
+						//- title: 'Responsive typography',
+						//- file:  'responsive-typography-alt.png',
+					//- }
+					{
+						title: '3-col responsive typography',
+						file:  'responsive-3col.png',
+					}, {
+						title: '2-col responsive typography',
+						file:  'responsive-2col.png',
+					}, {
+						title: '1-col responsive typography',
+						file:  'responsive-1col.png',
+					}
+				],
+			}
+		]
+
+- const HOST = 'http://10.0.0.5:5757'
+
+.set-artwork
+	each group in dataArtwork
+		section.set-artwork-group
+			h3.set-artwork-group-caption= group.caption
+			.set-artwork-group-list
+				each item in group.list
+					a.set-artwork-group-item(href=(HOST + dataSummary.path + '/artwork/' + item.file))
+						img(src=('./artwork/' + item.file) alt=item.title)

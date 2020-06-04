@@ -1,0 +1,53 @@
+extends ../_template
+
+block var
+	- const assetsPath = "../"
+	- const pageTitl = "A collection" + ""
+	- const bodyClass = "set"
+	- let bodyClassModifier = ""
+	//--- Data
+
+block headScripts
+	script.
+		/* Source Han Sans */
+		(function(d) {
+			var config = {
+				kitId: 'jnb6tpg',
+				scriptTimeout: 3000,
+				async: true
+			},
+			h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+		})(document);
+	//- include data/gon
+
+block mainBody
+	.set-frame
+		include module/header
+		.set-main
+			include module/artwork
+			include module/desc
+	//- .set-frame
+		//- .set-summary
+			block setSummaryData
+			header.set-summary-header
+				h1.set-summary-titleEn!= dataSummary.titleEn
+				p.set-summary-titleZh!= dataSummary.titleZh
+			footer.set-summary-info
+				p.set-summary-info-client= dataSummary.client
+				p.set-summary-info-misc= dataSummary.category + ', ' + dataSummary.date
+		.set-main
+			//- .set-artwork
+				block setArtworkData
+				each group in dataArtwork
+					section.set-artwork-group
+						h3.set-artwork-group-caption= group.caption
+						.set-artwork-group-list
+							each item in group.list
+								a.set-artwork-group-item(href=(HOST + _dataSummary.path + '/artwork/' + item.file))
+									img(src=('./artwork/' + item.file) alt=item.title)
+			article.set-desc
+				block setDescData
+
+block bodyFooter
+
+block dotTemplate

@@ -1,0 +1,168 @@
+.set-frame {
+	position: relative;
+	padding : 60px;
+}
+.set-frame::before {
+	content       : "";
+	position      : absolute;
+	z-index       : @zIndex-1;
+	top           : 60px;
+	bottom        : 60px;
+	left          : 60px;
+	right         : 60px;
+	border        : 2px solid @text-main;
+	pointer-events: none;
+}
+
+/*--- Summary ---*/
+.set-summary {
+	display        : flex;
+	justify-content: space-between;
+	padding        : 24px 24px 72px;
+	font-family    : @font-sans;
+}
+
+// Header
+.set-summary-header {
+	flex-basis: 60%;
+}
+.set-summary-titleEn {
+	font-size  : 24px;
+	line-height: 30px;
+}
+.set-summary-titleZh {
+	margin-top : 8px;
+	font-family: @font-hei;
+	font-size  : 16px;
+	font-weight: 500;
+	line-height: 24px;
+}
+.index-archive-item-footer {
+	font-size  : 16px;
+	font-weight: 500;
+	line-height: 20px;
+}
+
+// Info
+.set-summary-info {
+	flex-basis     : 40%;
+	display        : flex;
+	justify-content: flex-end;
+	font-size      : 12px;
+	line-height    : 16px;
+}
+.set-summary-info-client {
+	font-weight: 500;
+}
+.set-summary-info-misc {
+	margin-left: 2em;
+	font-weight: 500;
+}
+
+/*--- Summary END ---*/
+
+/*--- Main ---*/
+.set-main {
+	display        : flex;
+	justify-content: space-between;
+}
+
+// Artwork
+.set-artwork {
+	flex-basis: 60%;
+}
+.set-artwork-group + .set-artwork-group {
+	margin-top: 48px;
+}
+.set-artwork-group-caption {
+	padding              : 0 0 8px 24px;
+	font-family          : @font-sans;
+	font-size            : 10px;
+	font-weight          : 500;
+	line-height          : 16px;
+	letter-spacing       : 0.05em;
+	text-transform       : uppercase;
+	font-feature-settings: "cpsp", "pnum", "kern", "liga";
+}
+.set-artwork-group-item {
+	display         : block;
+	width           : 100%;
+	background-color: @bg-sub;
+	transition: background-color .25s ease-out;
+
+	& + & {
+		margin-top: 8px;
+	}
+	
+	.ua-Pointer &:hover,
+	&:active {
+		background-color: lighten(@bg-sub, 5%);
+	}
+	
+	img {
+		display   : block;
+		width     : 100%;
+		opacity   : 1;
+		transition: opacity .25s ease-out;
+
+		.ua-Pointer &:hover,
+		&:active {
+			opacity: 0.65;
+		}
+	}
+}
+
+// Desc
+.set-desc {
+	flex-basis   : 40%;
+	padding-top  : 32px;
+	padding-right: 24px;
+	padding-left : 64px;
+	box-sizing   : border-box;
+}
+.set-desc-en {
+	font-family: @font-sans;
+	font-size  : 16px;
+	line-height: 22px;
+
+	p + p {
+		margin-top: 1em;
+	}
+	
+	a {
+		text-decoration: underline;
+	}
+}
+
+// Footer
+.set-desc-footer {
+	display: flex;
+	padding: 32px 0;
+}
+.set-desc-footer-item {
+	.image-cover-fill();
+	display: block;
+	width: 24px;
+	height: 24px;
+	opacity: 1;
+	transition: opacity .25s ease-out;
+	
+	.ua-Pointer &:hover,
+	&:active {
+		opacity: 0.5;
+	}
+	
+	& + & {
+		margin-left: 24px;
+	}
+}
+.set-desc-footer-doc {
+	background-image: url(icon-doc.png);
+}
+.set-desc-footer-github {
+	background-image: url(icon-github.png);
+}
+.set-desc-footer-link {
+	background-image: url(icon-link.png);
+}
+/*--- Main END ---*/

@@ -1,0 +1,51 @@
+block setSummaryData
+	-
+		const dataSummary = {
+			titleEn:    'The 10th Anniversary',
+			titleZh:    '十周年',
+			client:     'The Type · Type is Beautiful',
+			clientLink: 'https://thetype.com',
+			category:   'Website',
+			date:       '2017',
+			path:       '/2017/tib10'
+		}
+
+block setArtworkData
+	-
+		const dataArtwork = [
+			{
+				caption: 'Screen captures',
+				list: [
+					{
+						title: 'Screenshot 1',
+						file:  'screenshot-1.png',
+					}, {
+						title: 'Screenshot 2',
+						file:  'screenshot-2.png',
+					}
+				],
+			}, {
+				caption : 'Responsive typography',
+				list: [
+					{
+						title: '3-col responsive typography',
+						file:  'responsive-3col.png',
+					}, {
+						title: '2-col responsive typography',
+						file:  'responsive-2col.png',
+					}, {
+						title: '1-col responsive typography',
+						file:  'responsive-1col.png',
+					}
+				],
+			}
+		]
+
+block setDescData
+	section.set-desc-en
+		p The site for the 10th anniversay of Type is Beautiful (presently The Type) is a recapitulation of the salon event in Shanghai, on May 27th, 2017.
+		p It was designed and developed as a single page static website, based on the visual plan drafted by <a href="https://thetype.com/author/rex-chen/">Rex Chen</a>.
+		p This job presents an implementation of responsive multi-column typography and the <a href="https://source.typekit.com/source-han-serif/">Source Han Serif</a>’s webfont family in use for the Chinese copies.
+	footer.set-desc-footer
+		a.set-desc-footer-item.set-desc-footer-link(href="https://thetype.com/10/")
+		a.set-desc-footer-item.set-desc-footer-github(href="https://github.com/thetype/10")
