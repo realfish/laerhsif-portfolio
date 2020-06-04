@@ -1,9 +1,3 @@
-.index main {
-	position: relative;
-	width   : 100%;
-	height  : 100%;
-}
-
 /*--- Head ---*/
 .index-head {
 	position   : relative;
@@ -49,8 +43,8 @@
 	background-color: @text-main;
 	transform       : scale(1);
 	transition      :
-		background-color .25s ease,
-		transform        .25s ease;
+		background-color .25s ease-out,
+		transform        .25s ease-out;
 
 	& + & {
 		margin-left: 16px;
@@ -101,8 +95,8 @@
 	box-sizing      : border-box;
 	background-color: fadeout(@bg-black, 100%);
 	transition      :
-		border-color     .25s ease,
-		background-color .25s ease;
+		border-color     .25s ease-out,
+		background-color .25s ease-out;
 
 	& + & {
 		margin-left: 4px;
@@ -171,15 +165,19 @@
 	background-color: fadeout(@bg-black, 100%);
 	color           : @text-main;
 	transition      :
-		border-color     .25s ease,
-		background-color .25s ease,
-		color            .25s ease;
+		border-color     .25s ease-out,
+		background-color .25s ease-out,
+		color            .25s ease-out;
 	
 	.ua-Pointer &:hover,
 	&:active {
 		border-color    : fadeout(@bg-black, 5%);
 		color           : @bg-main;
 		background-color: fadeout(@bg-black, 5%);
+	}
+	
+	:not(html.ua-Pointer) & {
+		user-select: none;
 	}
 }
 
