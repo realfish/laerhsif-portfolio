@@ -23,7 +23,7 @@
 .index-archive
 	each sec in _data
 		section.index-archive-sec
-			h2.index-archive-sectitle= sec.title
+			h2.index-archive-sectitle!= sec.title
 			.index-archive-list
 				each item in sec.list
 					a.index-archive-item(href=item.url)

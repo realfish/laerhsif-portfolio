@@ -18,7 +18,7 @@
 		.index-head-outline
 			each sec in dataArchive
 				.index-head-outline-sec
-					h5.index-head-outline-title= sec.title
+					h5.index-head-outline-title!= sec.title
 					nav.index-head-outline-list
 						each item in sec.list
 							a.index-head-outline-item(href=item.url)
