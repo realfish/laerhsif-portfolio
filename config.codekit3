@@ -13,9 +13,9 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/docs/.gitignore",
-		"oF": 0
+		"oF": 1
 		},
 	"/CHANGELOG.md": {
 		"cB": 0,
@@ -49,6 +49,123 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/docs/index.html",
+		"oF": 3,
+		"oS": 0
+		},
+	"/sets/2016/typedraw/artwork/screenshot-1.png": {
+		"ft": 32768,
+		"iS": 5503731,
+		"oA": 0,
+		"oAP": "/docs/2016/typedraw/artwork/screenshot-1.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2016/typedraw/artwork/screenshot-2.png": {
+		"ft": 32768,
+		"iS": 668493,
+		"oA": 0,
+		"oAP": "/docs/2016/typedraw/artwork/screenshot-2.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2016/typedraw/data.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/sets/2016/typedraw/data.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/sets/2016/typedraw/index.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/2016/typedraw/index.html",
+		"oF": 3,
+		"oS": 0
+		},
+	"/sets/2017/tib10/artwork/responsive-1col.png": {
+		"ft": 32768,
+		"iS": 503742,
+		"oA": 0,
+		"oAP": "/docs/2017/tib10/artwork/responsive-1col.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2017/tib10/artwork/responsive-2col.png": {
+		"ft": 32768,
+		"iS": 736911,
+		"oA": 0,
+		"oAP": "/docs/2017/tib10/artwork/responsive-2col.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2017/tib10/artwork/responsive-3col.png": {
+		"ft": 32768,
+		"iS": 1411898,
+		"oA": 0,
+		"oAP": "/docs/2017/tib10/artwork/responsive-3col.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2017/tib10/artwork/screenshot-1.png": {
+		"ft": 32768,
+		"iS": 5503731,
+		"oA": 0,
+		"oAP": "/docs/2017/tib10/artwork/screenshot-1.png",
+		"oF": 3,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2017/tib10/artwork/screenshot-2.png": {
+		"ft": 32768,
+		"iS": 668493,
+		"oA": 0,
+		"oAP": "/docs/2017/tib10/artwork/screenshot-2.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2017/tib10/data.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/sets/2017/tib10/data.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/sets/2017/tib10/index.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/2017/tib10/index.html",
 		"oF": 3,
 		"oS": 0
 		},
@@ -125,6 +242,39 @@
 		"oA": 2,
 		"oAP": "/docs/assets/favicon.ico",
 		"oF": 0
+		},
+	"/src/assets/icon-doc.png": {
+		"ft": 32768,
+		"iS": 1667,
+		"oA": 0,
+		"oAP": "/docs/assets/icon-doc.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/icon-github.png": {
+		"ft": 32768,
+		"iS": 3773,
+		"oA": 0,
+		"oAP": "/docs/assets/icon-github.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/icon-link.png": {
+		"ft": 32768,
+		"iS": 2546,
+		"oA": 0,
+		"oAP": "/docs/assets/icon-link.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"/src/assets/vconsole.min.js": {
 		"bF": 0,
@@ -417,6 +567,22 @@
 		"sI": 0,
 		"sU": 1
 		},
+	"/src/less/template/set.less": {
+		"aP": 1,
+		"bl": 0,
+		"eJ": 0,
+		"ft": 1,
+		"iI": 0,
+		"ma": 1,
+		"mS": 0,
+		"oA": 1,
+		"oAP": "/docs/less/test/assets/set.css",
+		"oF": 0,
+		"oS": 0,
+		"rwU": 0,
+		"sI": 0,
+		"sU": 1
+		},
 	"/src/less/vendor/normalize.less": {
 		"aP": 1,
 		"bl": 0,
@@ -488,6 +654,46 @@
 		"oAP": "/docs/pug/index/module/list.html",
 		"oF": 0,
 		"oS": 0
+		},
+	"/src/pug/set/index.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/pug/set/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/set/module/artwork.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/pug/set/module/artwork.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/set/module/desc.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/pug/set/module/desc.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/set/module/header.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/pug/set/module/header.html",
+		"oF": 0,
+		"oS": 0
 		}
 	},
 "hooks": [
@@ -500,7 +706,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "logo-react",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 612863172.29449701
+	"lastBuiltDate": 612999614.56658697
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
