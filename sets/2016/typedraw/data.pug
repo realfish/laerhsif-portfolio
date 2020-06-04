@@ -1,0 +1,37 @@
+block setSummaryData
+	-
+		const dataSummary = {
+			titleEn:    'TypeDraw',
+			titleZh:    'TypeChat（字谈字畅）播客抽奖',
+			client:     'TypeChat · The Type',
+			clientLink: 'https://thetype.com/typechat/',
+			category:   'Web app',
+			date:       '2016',
+			path:       '/2016/typedraw'
+		}
+
+block setArtworkData
+	-
+		const dataArtwork = [
+			{
+				caption: 'Screen captures',
+				list: [
+					{
+						title: 'Screenshot 1',
+						file:  'screenshot-1.png',
+					}, {
+						title: 'Screenshot 2',
+						file:  'screenshot-2.png',
+					}
+				],
+			}
+		]
+
+block setDescData
+	section.set-desc-en
+		p TypeDraw is the bingo cage for the podcast TypeChat.
+		p This app was designed for randomly picking one or more gift winners from the donors of the podcast. By a scheme based on the URL’s fragment identifier, it could reproduce every past drawing results.
+	
+	footer.set-desc-footer
+		a.set-desc-footer-item.set-desc-footer-link(href="https://typedraw.laerhsif.com/")
+		a.set-desc-footer-item.set-desc-footer-github(href="https://github.com/realfish/typedraw")
