@@ -26,7 +26,8 @@
 			h2.index-archive-sectitle!= sec.title
 			.index-archive-list
 				each item in sec.list
-					a.index-archive-item(href=item.url)
+					- const year = item.date.slice(0,4)
+					a.index-archive-item(href=item.url class=`index-archive-item--${year}`)
 						header.index-archive-item-header
 							h3.index-archive-item-titleEn!= item.titleEn
 							p.index-archive-item-titleZh!= item.titleZh

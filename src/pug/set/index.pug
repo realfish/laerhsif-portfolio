@@ -21,32 +21,21 @@ block headScripts
 	//- include data/gon
 
 block mainBody
-	.set-frame
+	block setSummaryData
+		-
+			const dataSummary = {
+				titleEn:  'The 10th Anniversary',
+				titleZh:  '十周年',
+				client:   'The Type · Type is Beautiful',
+				category: 'Website',
+				date:     '2017',
+				path:     '/2017/tib10'
+			}
+	.set-frame(class=`set-frame--${dataSummary.date.slice(0,4)}`)
 		include module/header
 		.set-main
 			include module/artwork
 			include module/desc
-	//- .set-frame
-		//- .set-summary
-			block setSummaryData
-			header.set-summary-header
-				h1.set-summary-titleEn!= dataSummary.titleEn
-				p.set-summary-titleZh!= dataSummary.titleZh
-			footer.set-summary-info
-				p.set-summary-info-client= dataSummary.client
-				p.set-summary-info-misc= dataSummary.category + ', ' + dataSummary.date
-		.set-main
-			//- .set-artwork
-				block setArtworkData
-				each group in dataArtwork
-					section.set-artwork-group
-						h3.set-artwork-group-caption= group.caption
-						.set-artwork-group-list
-							each item in group.list
-								a.set-artwork-group-item(href=(HOST + _dataSummary.path + '/artwork/' + item.file))
-									img(src=('./artwork/' + item.file) alt=item.title)
-			article.set-desc
-				block setDescData
 
 block bodyFooter
 
