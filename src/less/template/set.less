@@ -10,7 +10,7 @@
 	bottom        : 60px;
 	left          : 60px;
 	right         : 60px;
-	border        : 2px solid @text-main;
+	border        : 1px solid @text-main;
 	pointer-events: none;
 }
 
@@ -18,45 +18,39 @@
 .set-summary {
 	display        : flex;
 	justify-content: space-between;
-	padding        : 24px 24px 72px;
+	padding        : 16px 16px 96px;
 	font-family    : @font-sans;
 }
 
 // Header
 .set-summary-header {
 	flex-basis: 60%;
+	margin-top: -2px;
 }
 .set-summary-titleEn {
-	font-size  : 24px;
-	line-height: 30px;
+	font-size  : 18px;
+	line-height: 22px;
 }
 .set-summary-titleZh {
-	margin-top : 8px;
-	font-family: @font-hei;
-	font-size  : 16px;
-	font-weight: 500;
-	line-height: 24px;
-}
-.index-archive-item-footer {
-	font-size  : 16px;
-	font-weight: 500;
-	line-height: 20px;
+	padding-left: .5px;
+	margin-top  : 2px;
+	font-family : @font-hei;
+	font-size   : 14px;
+	font-weight : 500;
+	line-height : 20px;
 }
 
 // Info
 .set-summary-info {
 	flex-basis     : 40%;
-	display        : flex;
 	justify-content: flex-end;
-	font-size      : 12px;
-	line-height    : 16px;
-}
-.set-summary-info-client {
-	font-weight: 500;
+	display        : flex;
+	font-size      : 10px;
+	font-weight    : 500;
+	line-height    : 12px;
 }
 .set-summary-info-misc {
 	margin-left: 2em;
-	font-weight: 500;
 }
 
 /*--- Summary END ---*/
@@ -75,7 +69,7 @@
 	margin-top: 48px;
 }
 .set-artwork-group-caption {
-	padding              : 0 0 8px 24px;
+	padding              : 0 0 8px 16px;
 	font-family          : @font-sans;
 	font-size            : 10px;
 	font-weight          : 500;
@@ -116,28 +110,32 @@
 .set-desc {
 	flex-basis   : 40%;
 	padding-top  : 32px;
-	padding-right: 24px;
+	padding-right: 16px;
 	padding-left : 64px;
 	box-sizing   : border-box;
 }
 .set-desc-en {
 	font-family: @font-sans;
-	font-size  : 16px;
-	line-height: 22px;
+	font-size  : 14px;
+	line-height: 20px;
 
 	p + p {
 		margin-top: 1em;
 	}
 	
 	a {
-		text-decoration: underline;
+		// text-decoration: underline;
+		background-image   : linear-gradient(white 0%, #ffef3d 50%, white 100%);
+		background-position: center 50%;
+		background-repeat  : no-repeat;
+		background-size    : 100% 0.8em;
 	}
 }
 
 // Footer
 .set-desc-footer {
 	display: flex;
-	padding: 32px 0;
+	padding: 24px 0;
 }
 .set-desc-footer-item {
 	.image-cover-fill();
@@ -153,7 +151,7 @@
 	}
 	
 	& + & {
-		margin-left: 24px;
+		margin-left: 16px;
 	}
 }
 .set-desc-footer-doc {
@@ -170,73 +168,59 @@
 /*--- Colors of Year ---*/
 .set-frame--2007 {
 	&::before { border-color: @pantone-2007; }
-	.set-summary { color: @pantone-2007; }
-	.set-artwork { color: @pantone-2007; }
+	.set-summary, .set-artwork { color: @pantone-2007; }
 }
 .set-frame--2008 {
 	&::before { border-color: @pantone-2008; }
-	.set-summary { color: @pantone-2008; }
-	.set-artwork { color: @pantone-2008; }
+	.set-summary, .set-artwork { color: @pantone-2008; }
 }
 .set-frame--2009 {
 	&::before { border-color: @pantone-2009; }
-	.set-summary { color: @pantone-2009; }
-	.set-artwork { color: @pantone-2009; }
+	.set-summary, .set-artwork { color: @pantone-2009; }
 }
 .set-frame--2010 {
 	&::before { border-color: @pantone-2010; }
-	.set-summary { color: @pantone-2010; }
-	.set-artwork { color: @pantone-2010; }
+	.set-summary, .set-artwork { color: @pantone-2010; }
 }
 .set-frame--2011 {
 	&::before { border-color: @pantone-2011; }
-	.set-summary { color: @pantone-2011; }
-	.set-artwork { color: @pantone-2011; }
+	.set-summary, .set-artwork { color: @pantone-2011; }
 }
 .set-frame--2012 {
 	&::before { border-color: @pantone-2012; }
-	.set-summary { color: @pantone-2012; }
-	.set-artwork { color: @pantone-2012; }
+	.set-summary, .set-artwork { color: @pantone-2012; }
 }
 .set-frame--2013 {
 	&::before { border-color: @pantone-2013; }
-	.set-summary { color: @pantone-2013; }
-	.set-artwork { color: @pantone-2013; }
+	.set-summary, .set-artwork { color: @pantone-2013; }
 }
 .set-frame--2014 {
 	&::before { border-color: @pantone-2014; }
-	.set-summary { color: @pantone-2014; }
-	.set-artwork { color: @pantone-2014; }
+	.set-summary, .set-artwork { color: @pantone-2014; }
 }
 .set-frame--2015 {
 	&::before { border-color: @pantone-2015; }
-	.set-summary { color: @pantone-2015; }
-	.set-artwork { color: @pantone-2015; }
+	.set-summary, .set-artwork { color: @pantone-2015; }
 }
 .set-frame--2016 {
 	&::before { border-image: @pantone-2016o 2; }
-	.set-summary-header { color: @pantone-2016-b; }
+	.set-summary-header, .set-artwork { color: @pantone-2016-b; }
 	.set-summary-info { color: @pantone-2016-a; }
-	.set-artwork { color: @pantone-2016-b; }
 }
 .set-frame--2017 {
 	&::before { border-color: @pantone-2017; }
-	.set-summary { color: @pantone-2017; }
-	.set-artwork { color: @pantone-2017; }
+	.set-summary, .set-artwork { color: @pantone-2017; }
 }
 .set-frame--2018 {
 	&::before { border-color: @pantone-2018; }
-	.set-summary { color: @pantone-2018; }
-	.set-artwork { color: @pantone-2018; }
+	.set-summary, .set-artwork { color: @pantone-2018; }
 }
 .set-frame--2019 {
 	&::before { border-color: @pantone-2019; }
-	.set-summary { color: @pantone-2019; }
-	.set-artwork { color: @pantone-2019; }
+	.set-summary, .set-artwork { color: @pantone-2019; }
 }
 .set-frame--2020 {
 	&::before { border-color: @pantone-2020; }
-	.set-summary { color: @pantone-2020; }
-	.set-artwork { color: @pantone-2020; }
+	.set-summary, .set-artwork { color: @pantone-2020; }
 }
 /*--- Colors of Year END ---*/
