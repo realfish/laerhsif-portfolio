@@ -7,7 +7,7 @@
 		"uuidString": "CD9B11D5-75D2-4537-BAFE-0C6EECCE4123"
 		}
 	],
-"creatorBuild": "32001",
+"creatorBuild": "32186",
 "files": {
 	"/.gitignore": {
 		"cB": 0,
@@ -49,6 +49,219 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/docs/index.html",
+		"oF": 3,
+		"oS": 0
+		},
+	"/sets/2013/cnp-compilations/artwork/cover-2013spring.png": {
+		"ft": 32768,
+		"iS": 54584,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-compilations/artwork/cover-2013spring.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2013/cnp-compilations/artwork/cover-2013summer&autumn.png": {
+		"ft": 32768,
+		"iS": 425641,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-compilations/artwork/cover-2013summer&autumn.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2013/cnp-compilations/artwork/cover-2013winter.png": {
+		"ft": 32768,
+		"iS": 398845,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-compilations/artwork/cover-2013winter.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2013/cnp-compilations/artwork/cover-2014autumn&winter.png": {
+		"ft": 32768,
+		"iS": 562483,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-compilations/artwork/cover-2014autumn&winter.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2013/cnp-compilations/artwork/cover-2014spring.png": {
+		"ft": 32768,
+		"iS": 395679,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-compilations/artwork/cover-2014spring.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2013/cnp-compilations/artwork/cover-2014summer.png": {
+		"ft": 32768,
+		"iS": 59214,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-compilations/artwork/cover-2014summer.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2013/cnp-compilations/artwork/cover-2015spring.png": {
+		"ft": 32768,
+		"iS": 504010,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-compilations/artwork/cover-2015spring.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2013/cnp-compilations/artwork/obi-2013spring.png": {
+		"ft": 32768,
+		"iS": 62642,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-compilations/artwork/obi-2013spring.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2013/cnp-compilations/artwork/obi-2013winter.jpg": {
+		"ft": 16384,
+		"iS": 292222,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-compilations/artwork/obi-2013winter.jpg",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/sets/2013/cnp-compilations/artwork/obi-2014autumn&winter.png": {
+		"ft": 32768,
+		"iS": 224788,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-compilations/artwork/obi-2014autumn&winter.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2013/cnp-compilations/artwork/obi-2014spring.jpg": {
+		"ft": 16384,
+		"iS": 274949,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-compilations/artwork/obi-2014spring.jpg",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/sets/2013/cnp-compilations/artwork/obi-2014summer.png": {
+		"ft": 32768,
+		"iS": 26669,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-compilations/artwork/obi-2014summer.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2013/cnp-compilations/artwork/obi-2015.jpg": {
+		"ft": 16384,
+		"iS": 837798,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-compilations/artwork/obi-2015.jpg",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/sets/2013/cnp-compilations/data.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/sets/2013/cnp-compilations/data.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/sets/2013/cnp-compilations/index.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-compilations/index.html",
+		"oF": 3,
+		"oS": 0
+		},
+	"/sets/2014/cnp-ad/artwork/ad-print.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/docs/2014/cnp-ad/artwork/ad-print.pdf",
+		"oF": 2
+		},
+	"/sets/2014/cnp-ad/artwork/ad-proposals-alt.jpg": {
+		"ft": 16384,
+		"iS": 271521,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/docs/2014/cnp-ad/artwork/ad-proposals-alt.jpg",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/sets/2014/cnp-ad/artwork/ad-proposals.jpg": {
+		"ft": 16384,
+		"iS": 261913,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/docs/2014/cnp-ad/artwork/ad-proposals.jpg",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/sets/2014/cnp-ad/data.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/sets/2014/cnp-ad/data.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/sets/2014/cnp-ad/index.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/2014/cnp-ad/index.html",
 		"oF": 3,
 		"oS": 0
 		},
@@ -706,7 +919,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "logo-react",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 613075171.38535297
+	"lastBuiltDate": 613661377.81370604
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1210,6 +1423,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"default-case-last": {
+			"active": 0,
+			"optionString": ""
+			},
 		"default-param-last": {
 			"active": 0,
 			"optionString": ""
@@ -1622,6 +1839,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-loss-of-precision": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-magic-numbers": {
 			"active": 0,
 			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
@@ -1737,6 +1958,10 @@
 		"no-regex-spaces": {
 			"active": 1,
 			"optionString": ""
+			},
+		"no-restricted-exports": {
+			"active": 0,
+			"optionString": "{'restrictedNamedExports': []}"
 			},
 		"no-restricted-globals": {
 			"active": 0,
@@ -1881,6 +2106,10 @@
 		"no-use-before-define": {
 			"active": 0,
 			"optionString": "{'functions': true, 'classes': true}"
+			},
+		"no-useless-backreference": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-useless-call": {
 			"active": 0,
@@ -2690,13 +2919,13 @@
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 2,
+		"compilerType": 1,
 		"createSourceMap": 0,
-		"debugStyle": 0,
 		"decimalPrecision": 10,
+		"emitCharset": 1,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"useLibsass": 1
+		"shouldRunBless": 0
 		},
 	"languageDefaultsSLIM": {
 		"autoOutputAction": 0,
