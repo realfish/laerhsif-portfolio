@@ -1,0 +1,79 @@
+block setSummaryData
+	-
+		const dataSummary = {
+			titleEn:    'CNPolitics Compilations',
+			titleZh:    '政见合辑',
+			client:     'CNPolitics',
+			clientLink: 'http://cnpolitics.org/',
+			category:   'Editorial',
+			date:       '2015–2013',
+			path:       '/2013/cnp-compilations'
+		}
+
+block setArtworkData
+	-
+		const dataArtwork = [
+			{
+				caption: 'Obis',
+				list: [
+					{
+						title: 'Obi of the 2015 issues',
+						file:  'obi-2015.jpg',
+						
+					}, {
+						title: 'Obi of 2014 Autumn & Winter',
+						file:  'obi-2014autumn&winter.png',
+					}, {
+						title: 'Obi of 2014 Summer',
+						file:  'obi-2014summer.png',
+					}, {
+						title: 'Obi of 2014 Spring',
+						file:  'obi-2014spring.jpg',
+					}, {
+						title: 'Obi of 2013 Winter',
+						file:  'obi-2013winter.jpg',
+					}, {
+						title: 'Obi of 2013 Spring',
+						file:  'obi-2013spring.png',
+					}
+				],
+			}, {
+				caption: 'Covers & title pages',
+				list: [
+					{
+						title: 'Cover of 2013 Spring',
+						file:  'cover-2013spring.png',
+					}, {
+						title: 'Cover of 2013 Summer & Autumn',
+						file:  'cover-2013summer&autumn.png',
+					}, {
+						title: 'Cover of 2013 Winter',
+						file:  'cover-2013winter.png',
+					}, {
+						title: 'Cover of 2014 Spring',
+						file:  'cover-2014spring.png',
+					}, {
+						title: 'Cover & title page of 2014 Summer',
+						file:  'cover-2014summer.png',
+					}, {
+						title: 'Cover & title page of 2014 Autumn & Winter',
+						file:  'cover-2014autumn&winter.png',
+					}, {
+						title: 'Cover & title page of 2015 Spring',
+						file:  'cover-2015spring.png',
+					}
+				],
+			}
+		]
+
+block setDescData
+	section.set-desc-en
+		p The CNPolitics Compilation is a quarterly journal on the politics and sociology studies about China, which is compiled from the archives of the CNPolitics <a href="http://cnpolitics.org/">website</a>.
+		p Redesigned since the year 2013, the seven issues—2013 Spring, 2013 Summer & Autumn, 2013 Winter, 2014 Spring, 2014 Autumn & Winter, and 2015 Spring—were under an incremental development both of the cover’s visual language and the body’s typography.
+		p Firstly in 2013 spring, the grid system was rebuild from scratch for good readability on tablets or wider screens, based on the new visual identity. For the next issues in the same year, page size (ratio) was trimmed to fit 9.7-inch iPad screens, while the cover images started to be picked from <a href="https://www.rijksmuseum.nl/">Rijksmuseum</a>’s library. Then the cover with front matter was redesigned by <a href="../../2014/cnp-ad/">another visual language</a> since the 2014 Summer issue.
+		p The scheduled four issues of 2015 were to be published with a brand new cover design. For some personal as well as team’s reasons, only the 2015 Spring issue was accomplished, however.
+		p The CNPolitics Compilation is free delivered online. In 2016, all the seven issues above were pushed to GitHub.
+	
+	footer.set-desc-footer
+		a.set-desc-footer-item.set-desc-footer-link(href="http://cnpolitics.org/publish/")
+		a.set-desc-footer-item.set-desc-footer-github(href="https://github.com/cnpolitics/compilation")
