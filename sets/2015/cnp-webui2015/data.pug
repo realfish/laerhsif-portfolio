@@ -1,0 +1,39 @@
+block setSummaryData
+	-
+		const dataSummary = {
+			titleEn:    'Brand new CNPolitics.org',
+			titleZh:    '网站新界面',
+			client:     'CNPolitics',
+			clientLink: 'http://cnpolitics.org/',
+			category:   'Website',
+			date:       '2015',
+			path:       '/2015/cnp-webui2015'
+		}
+
+block setArtworkData
+	-
+		const dataArtwork = [
+			{
+				caption: 'Prototype',
+				list: [
+					{
+						title: 'Screenshot 1',
+						file:  'screenshot-1.png',
+					}, {
+						title: 'Screenshot 2',
+						file:  'screenshot-2.png',
+					}, {
+						title: 'Screenshot 3',
+						file:  'screenshot-3.png',
+					}
+				],
+			}
+		]
+
+block setDescData
+	section.set-desc-en
+		p After year 2014, the visual identity of CNPolitics was evolving into some more concise and typographic form, thus the website was supposed to follow the iteration.
+		p The homepage was prototyped under the idea above, based on the visual language from the <a href="../../2014/cnp-ad/">CNPolitics Compilation</a> 2014 Summer as well as the 2014 Autumn & Winter.
+	footer.set-desc-footer
+		a.set-desc-footer-item.set-desc-footer-link(href="https://cnpolitics.github.io/cnpolitics.org-2015/")
+		a.set-desc-footer-item.set-desc-footer-github(href="https://github.com/cnpolitics/cnpolitics.org-2015")

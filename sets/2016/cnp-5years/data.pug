@@ -1,0 +1,39 @@
+block setSummaryData
+	-
+		const dataSummary = {
+			titleEn:    'The 5th Anniversary',
+			titleZh:    '五周年',
+			client:     'CNPolitics',
+			clientLink: 'http://cnpolitics.org/',
+			category:   'Website',
+			date:       '2016',
+			path:       '/2016/cnp-5years'
+		}
+
+block setArtworkData
+	-
+		const dataArtwork = [
+			{
+				caption: 'Screen captures',
+				list: [
+					{
+						title: 'Screenshot of wide screen',
+						file:  'screenshot-wide.png',
+					}, {
+						title: 'Screenshots of narrow screen, set 1',
+						file:  'screenshot-narrow-1.png',
+					}, {
+						title: 'Screenshots of narrow screen, set 2',
+						file:  'screenshot-narrow-2.png',
+					}
+				],
+			}
+		]
+
+block setDescData
+	section.set-desc-en
+		p The site for the 5th anniversay of CNPolitics is a timeline and index of the retrospective work collection as well as a special interview of the members.
+		p Built as a single page, it was designed and developed for mainly browsering on the mobile devices.
+	footer.set-desc-footer
+		a.set-desc-footer-item.set-desc-footer-link(href="https://cnpolitics.github.io/5years/")
+		a.set-desc-footer-item.set-desc-footer-github(href="https://github.com/cnpolitics/5years")

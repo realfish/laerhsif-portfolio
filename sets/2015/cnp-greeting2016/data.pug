@@ -1,0 +1,36 @@
+block setSummaryData
+	-
+		const dataSummary = {
+			titleEn:    'New year greeting for 2016',
+			titleZh:    '二〇一六新年问候',
+			client:     'CNPolitics',
+			clientLink: 'http://cnpolitics.org/',
+			category:   'Website',
+			date:       '2015',
+			path:       '/2015/cnp-greeting2016'
+		}
+
+block setArtworkData
+	-
+		const dataArtwork = [
+			{
+				caption: 'Screen captures',
+				list: [
+					{
+						title: 'Screenshot 1',
+						file:  'screenshot-1.png',
+					}, {
+						title: 'Screenshot 2',
+						file:  'screenshot-2.png',
+					}
+				],
+			}
+		]
+
+block setDescData
+	section.set-desc-en
+		p This bilingual new year greeting was designed to be sent by email newsletter.
+		p There was also a webpage-based copy for each greeting sent, which could be filled respectively from the same static template via the scheme based on URL’s query string.
+	footer.set-desc-footer
+		a.set-desc-footer-item.set-desc-footer-link(href="https://cnpolitics.github.io/greeting-dec2015/?laf=Jian&lal=Zheng&zhn=%E9%83%91%E9%89%B4")
+		a.set-desc-footer-item.set-desc-footer-github(href="https://github.com/cnpolitics/greeting-dec2015")
