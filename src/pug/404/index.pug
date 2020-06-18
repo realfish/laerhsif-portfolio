@@ -1,0 +1,35 @@
+extends ../_template
+
+block var
+	- const assetsPath = "./"
+	- const pageTitl = "404 Not Found" + ""
+	- const bodyClass = "http404"
+	- let bodyClassModifier = ""
+	//--- Data
+
+block headScripts
+	//- script.
+		/* Source Han Sans */
+		(function(d) {
+			var config = {
+				kitId: 'jnb6tpg',
+				scriptTimeout: 3000,
+				async: true
+			},
+			h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+		})(document);
+	//- include data/gon
+
+block mainBody
+	.http404-frame
+		header.http404-info
+			h1.http404-title Under Construction
+			p.http404-code
+				code 404 Not Found
+		nav.http404-nav
+			a.http404-nav-back(href="javascript:history.back()")
+			a.http404-nav-home(href="/")
+
+block bodyFooter
+
+block dotTemplate
