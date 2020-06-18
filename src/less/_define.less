@@ -3,7 +3,7 @@
  */
 
 @bg-main:     hsl(0, 0%, 100%);
-@bg-sub:      hsl(0, 0%, 90%);
+@bg-sub:      hsl(0, 0%, 93%);
 @bg-black:    hsl(0, 0%, 0%);
 
 @text-main:   hsl(0, 0%, 20%);
@@ -27,8 +27,8 @@
 @pantone-2015:   #964f4c;
 @pantone-2016-a: #f7cac9;
 @pantone-2016-b: #91a8d0;
-@pantone-2016:   linear-gradient(to top, #f7cac9, #91a8d0);
-@pantone-2016o:  linear-gradient(to left, #f7cac9, #91a8d0);
+@pantone-2016:   linear-gradient(to top, @pantone-2016-a, @pantone-2016-b);
+@pantone-2016o:  linear-gradient(to left, @pantone-2016-a, @pantone-2016-b);
 @pantone-2017:   #88b04b;
 @pantone-2018:   #5f4b8b;
 @pantone-2019:   #fa7268;
@@ -53,9 +53,11 @@
 	font-family: "Punct Hei Body";
 	font-weight: 400;
 	src: local("PingFang SC"), local("PingFang SC Regular"), local("Hiragino Sans GB"), local("Hiragino Sans GB W3"), local("Heiti SC"), local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("NSimSun"), local("SimSun");
-	unicode-range: U+002F, U+2014, /* U+00B7, */ U+2026, U+201C, U+201D;
+	unicode-range: U+002D, U+002F, U+2013, U+2014, U+00B7, U+2026, U+201C, U+201D;
 	/*
+		hyphen,
 		solidus,
+		en dash,
 		em dash,
 		middle dot,
 		ellipsis,
@@ -71,6 +73,7 @@
 @font-sans: p22-underground, @font-fb-sans, sans-serif;
 @font-hei : "Punct Hei Body", p22-underground, @font-fb-sans, source-han-sans-simplified-c, @font-fb-hei, sans-serif;
 
+@font-code: fira-mono, Consolas, Menlo, monospace, monospace;
 
 
 /**
