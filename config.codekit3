@@ -36,12 +36,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/docs": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/docs/docs",
-		"oF": 0
-		},
 	"/index/archive.pug": {
 		"cB": 0,
 		"cOD": 0,
@@ -1168,7 +1162,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "logo-react",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 614202166.08874404
+	"lastBuiltDate": 615118435.82751
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
