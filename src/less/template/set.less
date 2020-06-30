@@ -1,6 +1,18 @@
+.set main {
+	padding-bottom: constant(safe-area-inset-bottom);
+	padding-bottom: env(safe-area-inset-bottom);
+}
+
 .set-frame {
 	position: relative;
 	padding : 60px;
+	
+	@media screen and (max-width: 1024px) {
+		padding: 24px;
+	}
+	@media screen and (max-width: 640px) {
+		padding: 16px;
+	}
 }
 .set-frame::before {
 	content       : "";
@@ -12,6 +24,20 @@
 	right         : 60px;
 	border        : 1px solid @text-main;
 	pointer-events: none;
+	
+	@media screen and (max-width: 1024px) {
+		top   : 24px;
+		bottom: 24px;
+		left  : 24px;
+		right : 24px;
+	}
+	@media screen and (max-width: 640px) {
+		// position: fixed;
+		top   : 16px;
+		bottom: 16px;
+		left  : 16px;
+		right : 16px;
+	}
 }
 
 /*--- Summary ---*/
@@ -20,12 +46,22 @@
 	justify-content: space-between;
 	padding        : 16px 16px 96px;
 	font-family    : @font-sans;
+	
+	@media screen and (max-width: 640px) {
+		flex-wrap: wrap;
+	}
 }
 
 // Header
 .set-summary-header {
 	flex-basis: 60%;
 	margin-top: -2px;
+	
+	@media screen and (max-width: 640px) {
+		flex-basis : 100%;
+		order      : 1;
+		padding-top: 32px;
+	}
 }
 .set-summary-titleEn {
 	font-size  : 18px;
@@ -49,6 +85,12 @@
 	font-weight    : 500;
 	line-height    : 12px;
 	
+	@media screen and (max-width: 640px) {
+		flex-basis     : 100%;
+		justify-content: space-between;
+		order          : 0;
+	}
+	
 	& > p {
 		flex-shrink: 0;
 	}
@@ -63,11 +105,19 @@
 .set-main {
 	display        : flex;
 	justify-content: space-between;
+	
+	@media screen and (max-width: 640px) {
+		// display: none;
+	}
 }
 
 // Artwork
 .set-artwork {
 	flex-basis: 60%;
+	
+	@media screen and (max-width: 640px) {
+		flex-basis: 100%;
+	}
 }
 .set-artwork-group + .set-artwork-group {
 	margin-top: 48px;
@@ -86,7 +136,7 @@
 	display         : block;
 	width           : 100%;
 	background-color: @bg-sub;
-	transition: background-color .25s ease-out;
+	transition      : background-color .25s ease-out;
 
 	& + & {
 		margin-top: 8px;
@@ -117,8 +167,45 @@
 	padding-right: 16px;
 	padding-left : 64px;
 	box-sizing   : border-box;
+	
+	@media screen and (max-width: 1024px) {
+		padding-left : 48px;
+	}
+	@media screen and (max-width: 640px) {
+		position        : fixed;
+		z-index         : @zIndex-2;
+		top             : 0;
+		bottom          : 0;
+		left            : 16px;
+		right           : 0;
+		flex-basis      : 100%;
+		padding         : 0;
+		border-left     : 1px solid currentColor;
+		background-color: @bg-main;
+		hyphens         : auto;
+		transform       : translate3d(100%, 0, 0) translate3d(-17px, 0, 0);
+		transition      : transform .25s ease-out;
+	}
+}
+.set-desc.is-active {
+	@media screen and (max-width: 640px) {
+		transform: translate3d(0%, 0, 0);
+	}
+}
+.set-desc-wrap {
+	@media screen and (max-width: 640px) {
+		overflow                  : scroll;
+		-webkit-overflow-scrolling: touch;
+		height                    : 100%;
+		padding-top               : 72px;
+		padding-bottom            : 72px;
+		padding-left              : 32px;
+		padding-right             : 16px;
+		box-sizing                : border-box;
+	}
 }
 .set-desc-en {
+	color      : @text-main;
 	font-family: @font-sans;
 	font-size  : 14px;
 	line-height: 20px;
@@ -143,10 +230,10 @@
 }
 .set-desc-footer-item {
 	.image-cover-fill();
-	display: block;
-	width: 24px;
-	height: 24px;
-	opacity: 1;
+	display   : block;
+	width     : 24px;
+	height    : 24px;
+	opacity   : 1;
 	transition: opacity .25s ease-out;
 	
 	.ua-Pointer &:hover,
@@ -167,64 +254,100 @@
 .set-desc-footer-link {
 	background-image: url(icon-link.png);
 }
+
+// Desc handle
+.set-desc-handle {
+	display    : none;
+	user-select: none;
+	
+	@media screen and (max-width: 640px) {
+		position: fixed;
+		z-index : @zIndex-9;
+		top     : 72px;
+		left    : (-48px + 16);
+		display : block;
+		width   : 48px;
+		height  : 24px;
+	}
+}
+.set-desc-handle-bar {
+	position        : absolute;
+	top             : 3px;
+	width           : 1px;
+	height          : 18px;
+	background-color: currentColor;
+}
+.set-desc-handle-bar--1 {
+	right: (3px + 16);
+}
+.set-desc-handle-bar--2 {
+	right: (6px + 16);
+}
+.set-desc-handle-bar--3 {
+	right: (9px + 16);
+}
 /*--- Main END ---*/
 
 /*--- Colors of Year ---*/
 .set-frame--2007 {
 	&::before { border-color: @pantone-2007; }
-	.set-summary, .set-artwork { color: @pantone-2007; }
+	.set-summary, .set-artwork, .set-desc, .set-desc-handle { color: @pantone-2007; }
 }
 .set-frame--2008 {
 	&::before { border-color: @pantone-2008; }
-	.set-summary, .set-artwork { color: @pantone-2008; }
+	.set-summary, .set-artwork, .set-desc, .set-desc-handle { color: @pantone-2008; }
 }
 .set-frame--2009 {
 	&::before { border-color: @pantone-2009; }
-	.set-summary, .set-artwork { color: @pantone-2009; }
+	.set-summary, .set-artwork, .set-desc, .set-desc-handle { color: @pantone-2009; }
 }
 .set-frame--2010 {
 	&::before { border-color: @pantone-2010; }
-	.set-summary, .set-artwork { color: @pantone-2010; }
+	.set-summary, .set-artwork, .set-desc, .set-desc-handle { color: @pantone-2010; }
 }
 .set-frame--2011 {
 	&::before { border-color: @pantone-2011; }
-	.set-summary, .set-artwork { color: @pantone-2011; }
+	.set-summary, .set-artwork, .set-desc, .set-desc-handle { color: @pantone-2011; }
 }
 .set-frame--2012 {
 	&::before { border-color: @pantone-2012; }
-	.set-summary, .set-artwork { color: @pantone-2012; }
+	.set-summary, .set-artwork, .set-desc, .set-desc-handle { color: @pantone-2012; }
 }
 .set-frame--2013 {
 	&::before { border-color: @pantone-2013; }
-	.set-summary, .set-artwork { color: @pantone-2013; }
+	.set-summary, .set-artwork, .set-desc, .set-desc-handle { color: @pantone-2013; }
 }
 .set-frame--2014 {
 	&::before { border-color: @pantone-2014; }
-	.set-summary, .set-artwork { color: @pantone-2014; }
+	.set-summary, .set-artwork, .set-desc, .set-desc-handle { color: @pantone-2014; }
 }
 .set-frame--2015 {
 	&::before { border-color: @pantone-2015; }
-	.set-summary, .set-artwork { color: @pantone-2015; }
+	.set-summary, .set-artwork, .set-desc, .set-desc-handle { color: @pantone-2015; }
 }
 .set-frame--2016 {
 	&::before { border-image: @pantone-2016o 2; }
 	.set-summary-header, .set-artwork { color: @pantone-2016-b; }
-	.set-summary-info { color: @pantone-2016-a; }
+	.set-summary-info, .set-desc, .set-desc-handle { color: @pantone-2016-a; }
+	
+	@media screen and (max-width: 640px) {
+		.set-summary-info-client { color: @pantone-2016-b; }
+	}
 }
 .set-frame--2017 {
 	&::before { border-color: @pantone-2017; }
-	.set-summary, .set-artwork { color: @pantone-2017; }
+	.set-summary, .set-artwork, .set-desc, .set-desc-handle { color: @pantone-2017; }
 }
 .set-frame--2018 {
 	&::before { border-color: @pantone-2018; }
-	.set-summary, .set-artwork { color: @pantone-2018; }
+	.set-summary, .set-artwork, .set-desc, .set-desc-handle { color: @pantone-2018; }
 }
 .set-frame--2019 {
 	&::before { border-color: @pantone-2019; }
-	.set-summary, .set-artwork { color: @pantone-2019; }
+	.set-summary, .set-artwork, .set-desc, .set-desc-handle { color: @pantone-2019; }
 }
 .set-frame--2020 {
 	&::before { border-color: @pantone-2020; }
-	.set-summary, .set-artwork { color: @pantone-2020; }
+	.set-summary, .set-artwork, .set-desc, .set-desc-handle { color: @pantone-2020; }
 }
 /*--- Colors of Year END ---*/
