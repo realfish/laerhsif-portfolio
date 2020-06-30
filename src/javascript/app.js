@@ -11,6 +11,7 @@ _misc();
 // View
 // import viewHttp404 from './view/http404';
 import viewIndex   from './view/index';
+import viewSet     from './view/set';
 
 // View router
 let view = doc.querySelector('body').classList[0];
@@ -22,6 +23,10 @@ switch (view) {
 	// }
 	case 'index': {
 		viewIndex();
+		break;
+	}
+	case 'set': {
+		viewSet();
 		break;
 	}
 }
