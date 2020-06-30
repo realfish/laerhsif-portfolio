@@ -36,6 +36,12 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/docs": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/docs/docs",
+		"oF": 0
+		},
 	"/index/archive.pug": {
 		"cB": 0,
 		"cOD": 0,
@@ -754,7 +760,7 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/docs/javascript/_vendor/min/bodyScrollLock-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -776,6 +782,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/docs/javascript/_vendor/min/han-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/src/javascript/_vendor/lodash.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/javascript/_vendor/min/lodash-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -897,6 +914,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/docs/javascript/view/min/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/src/javascript/view/set.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/javascript/view/min/set-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1162,7 +1190,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "logo-react",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 615118435.82751
+	"lastBuiltDate": 615230239.22070801
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
