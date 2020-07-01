@@ -3,6 +3,13 @@
 	position   : relative;
 	height     : 80vh;
 	font-family: @font-sans;
+	
+	@media screen and (max-width: 640px) {
+		height: 32px;
+	}
+	@media screen and (max-width: 480px) {
+		height: 192px
+	}
 }
 .index-head-wrap {
 	position       : relative;
@@ -14,26 +21,94 @@
 	margin         : 0 auto;
 	
 	@media screen and (min-width: 1548px) {
-		width: (300px*5 + 8*5);
+		width: (300px*5 + 8*5 - 4*2);
 	}
 	@media screen and (max-width: 1240px) {
-		width: (300px*3 + 8*3);
+		width: (300px*3 + 8*3 - 4*2);
 	}
 	@media screen and (max-width: 932px) {
-		width: (300px*2 + 8*2);
+		width: (300px*2 + 8*2 - 4*2);
+	}
+	@media screen and (max-width: 640px) {
+		top      : unset;
+		transform: none;
+		width    : auto;
+	}
+	@media screen and (max-width: 359px) {
+		width       : (300px*1 + 4*2);
+		margin-right: auto;
 	}
 }
 
 // Header
+.index-head-header {
+	@media screen and (max-width: 640px) {
+		position        : fixed;
+		z-index         : @zIndex-3;
+		top             : 50%;
+		left            : 0;
+		right           : 0;
+		font-size       : 28px;
+		transform-origin: left bottom;
+		transform       : translateX(12px) translateY(-100%);
+	}
+	@media screen and (max-width: 480px) {
+		top           : 0;
+		letter-spacing: 0.05em;
+		transform     : none;
+	}
+	@media screen and (max-width: 359px) {
+		position : absolute;
+		transform: none;
+	}
+}
 .index-head-title {
+	font-size            : 32px;
 	letter-spacing       : 0.025em;
 	text-transform       : uppercase;
 	font-feature-settings: "cpsp", "pnum", "kern", "liga";
+	
+	@media screen and (max-width: 640px) {
+		font-size: 28px;
+	}
+	@media screen and (max-width: 480px) {
+		letter-spacing  : 0.05em;
+		transform-origin: left bottom;
+		transform: rotateZ(90deg) translateX(-8px) translateY(-12px);
+	}
+	@media screen and (max-width: 359px) {
+		transform: rotateZ(90deg) translateX(-8px) translateY(-2px);
+	}
 }
 .index-head-link {
 	display     : flex;
 	padding-left: 1px;
 	margin-top  : 16px;
+	
+	@media screen and (max-width: 640px) {
+		padding-left: 3px;
+		margin-top  : 8px;
+	}
+	@media screen and (max-width: 480px) {
+		position      : fixed;
+		left          : 22px;
+		bottom        : constant(safe-area-inset-bottom);
+		bottom        : env(safe-area-inset-bottom);
+		display       : block;
+		width         : 8px;
+		padding-left  : 0;
+		padding-bottom: 24px;
+		margin-top    : 0;
+	}
+	@media screen and (max-width: 359px) {
+		position: absolute;
+		left    : unset;
+		bottom  : unset;
+		top     : 20px;
+		right   : 6px;
+		display : flex;
+		width   : auto;
+	}
 }
 .index-head-link-item {
 	display         : block;
@@ -52,12 +127,38 @@
 	
 	.ua-Pointer &:hover,
 	&:active {
-		transform: scale(1.2);
 		background-color: fadeout(@bg-black, 5%);
+		transform       : scale(1.2);
+	}
+	
+	@media screen and (max-width: 640px) {
+		width : 8px;
+		height: 8px;
+		
+		& + & {
+			margin-left: 12px;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		& + & {
+			margin-left: 0;
+			margin-top : 16px;
+		}
+	}
+	@media screen and (max-width: 359px) {
+		& + & {
+			margin-top : 0;
+			margin-left: 12px;
+		}
 	}
 }
 
 // Outline
+.index-head-outline {
+	@media screen and (max-width: 640px) {
+		display: none;
+	}
+}
 .index-head-outline-sec {
 	position: relative;
 	
@@ -138,6 +239,14 @@
 	}
 	@media screen and (max-width: 932px) {
 		width: (300px*2 + 8*2);
+	}
+	@media screen and (max-width: 640px) {
+		width: (300px*1 + 4 + 16);
+		margin-right: 0;
+	}
+	@media screen and (max-width: 359px) {
+		width: (300px*1 + 4*2);
+		margin-right: auto;
 	}
 }
 .index-archive-sectitle {
