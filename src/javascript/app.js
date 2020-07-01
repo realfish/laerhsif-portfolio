@@ -10,7 +10,7 @@ _misc();
 
 // View
 // import viewHttp404 from './view/http404';
-import viewIndex   from './view/index';
+// import viewIndex   from './view/index';
 import viewSet     from './view/set';
 
 // View router
@@ -21,10 +21,10 @@ switch (view) {
 	// 	viewHttp404();
 	// 	break;
 	// }
-	case 'index': {
-		viewIndex();
-		break;
-	}
+	// case 'index': {
+	// 	viewIndex();
+	// 	break;
+	// }
 	case 'set': {
 		viewSet();
 		break;
