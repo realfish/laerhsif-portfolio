@@ -1,0 +1,37 @@
+block setSummaryData
+	-
+		const dataSummary = {
+			titleEn:    'Live Working or Die Fighting',
+			titleZh:    '劳工的全球化',
+			client:     'CNPolitics',
+			clientLink: 'http://cnpolitics.org/',
+			category:   'Book',
+			date:       '2017',
+			path:       '/2017/lwodf'
+		}
+
+block setArtworkData
+	-
+		const dataArtwork = [
+			{
+				caption: 'Covers',
+				list: [
+					{
+						title: 'Final',
+						file:  'cover-final.jpg',
+					}, {
+						title: 'Proposal',
+						file:  'cover-proposal.jpg',
+					}
+				],
+			}
+		]
+
+block setDescData
+	section.set-desc-en
+		p The Chinese edition of Live Working or Die Fighting: How the working class went global, authored by Paul Mason, was translated by the CNPolitics translation team in 2017. This work is licensed under CC BY-NC-ND 4.0.  is the second crowdsourcing translation project after the <a href="../../2016/fandom-publics/">Fandom Publics 粉丝公众</a>.
+		p For censorship’s sake, there are two versions of the Chinese edition. The full version’s title is metaphrased into <span lang="zh-Hans">打工苟活还是以死抗争——工人阶级的全球化</span>, while the abridged is paraphrased shortly into <span lang="zh-Hans">劳工的全球化</span>. The latter has been published on GitHub.
+		p There were two proposals for the cover design. Cover image of the adopted is the masterpiece La vague (The Wave) by the Realism artist <a href="https://en.wikipedia.org/wiki/Gustave_Courbet">Jean Désiré Gustave Courbet</a>.
+	footer.set-desc-footer
+		a.set-desc-footer-item.set-desc-footer-doc(href="./artwork/lwodf-v1.1.pdf")
+		a.set-desc-footer-item.set-desc-footer-github(href="https://github.com/cnpolitics/lwodf")

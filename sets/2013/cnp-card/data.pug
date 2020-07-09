@@ -1,0 +1,33 @@
+block setSummaryData
+	-
+		const dataSummary = {
+			titleEn:    'Calling card',
+			titleZh:    '名片',
+			client:     'CNPolitics',
+			clientLink: 'http://cnpolitics.org/',
+			category:   'Visual identity',
+			date:       '2013',
+			path:       '/2013/card'
+		}
+
+block setArtworkData
+	-
+		const dataArtwork = [
+			{
+				caption: 'Proposals',
+				list: [
+					{
+						title: 'Proposals',
+						file:  'proposals.png',
+					}
+				],
+			}
+		]
+
+block setDescData
+	section.set-desc-en
+		p There were two layouts—flush and centered—designed as the proposals of the CNPolitics calling card.
+		p Meanwhile, there are two color schemes—paper and red—for the back side of the card to meet the various usages and printing processes.
+	
+	footer.set-desc-footer
+		a.set-desc-footer-item.set-desc-footer-doc(href="./artwork/print-sample.pdf")

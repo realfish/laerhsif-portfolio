@@ -1,0 +1,40 @@
+block setSummaryData
+	-
+		const dataSummary = {
+			titleEn:    'Tote bag',
+			titleZh:    '帆布袋',
+			client:     'CNPolitics',
+			clientLink: 'http://cnpolitics.org/',
+			category:   'Website',
+			date:       '2016–2015',
+			path:       '/2015/cnp-tote'
+		}
+
+block setArtworkData
+	-
+		const dataArtwork = [
+			{
+				caption: 'Proposals',
+				list: [
+					{
+						title: 'Two proposals',
+						file:  'proposal.jpg',
+					}
+				],
+			}, {
+				caption: 'Final',
+				list: [
+					{
+						title: 'Final design',
+						file:  'final.jpg',
+					}
+				],
+			}
+		]
+
+block setDescData
+	section.set-desc-en
+		p As a souvenir of CNPolitics, this tote bag presents the humorous Chinese slogan 靠谱、温柔、深入、持久地谈论中国 which literally means “talking about China reasonably, gently, deeply and persistently”.
+		p There were two proposals of the doodle design, one to parody the Ivy League emblems and the other to parody the Standard Dictionary of Contemporary Chinese <span lang="zh-Hans">现代汉语规范词典</span>. In the year 2016, the latter design went into production through the cooperation with a <a href="http://www.chihengfoundation.com/">Chi Heng Foundation</a> project for AIDS refief.
+	footer.set-desc-footer
+		a.set-desc-footer-item.set-desc-footer-link(href="http://cnpolitics.org/2016/08/cnpolitics-bag/")

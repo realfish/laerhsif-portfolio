@@ -1,0 +1,34 @@
+block setSummaryData
+	-
+		const dataSummary = {
+			titleEn:    'The Internet & New Social Formation in China',
+			titleZh:    '粉丝公众',
+			client:     'CNPolitics',
+			clientLink: 'http://cnpolitics.org/',
+			category:   'Book',
+			date:       '2016',
+			path:       '/2016/fandom-publics'
+		}
+
+block setArtworkData
+	-
+		const dataArtwork = [
+			{
+				caption: 'Cover',
+				list: [
+					{
+						title: 'Cover',
+						file:  'cover.png',
+					}
+				],
+			}
+		]
+
+block setDescData
+	section.set-desc-en
+		p The Chinese edition of The Internet and New Social Formation in China: Fandom publics in the making, authored by Weiyu Zhang <span lang="zh-Hans">张玮玉</span>, was translated by the CNPolitics translation team in 2016. This work is licensed under CC BY-NC-ND 4.0.
+		p It is the first crowdsourcing translation project hosted by CNPolitics. The Chinese title <span lang="zh-Hans">粉丝公众</span> is derived from the original subtitle’s Fandom Publics. The work has been published on GitHub with the issue tracker being used for erratum and feedback.
+		p The typography of Chinese edition is adapted from the <a href="../../2013/cnp-compilations/">CNPolitics Compilation</a>. The cover design is inspired by the cover image of <a href="https://www.routledge.com/The-Internet-and-New-Social-Formation-in-China-Fandom-Publics-in-the-Making/Zhang/p/book/9781138477216"> original edition</a>.
+	footer.set-desc-footer
+		a.set-desc-footer-item.set-desc-footer-doc(href="http://cnpolitics.github.io/fandom-publics/pdf/FandomPublics_CN_v1.1.pdf")
+		a.set-desc-footer-item.set-desc-footer-github(href="https://github.com/cnpolitics/fandom-publics")
