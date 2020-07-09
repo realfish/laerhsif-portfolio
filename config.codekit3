@@ -52,6 +52,45 @@
 		"oF": 3,
 		"oS": 0
 		},
+	"/sets/2013/cnp-card/artwork/print-sample.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/docs/2013/cnp-card/artwork/print-sample.pdf",
+		"oF": 2
+		},
+	"/sets/2013/cnp-card/artwork/proposals.png": {
+		"ft": 32768,
+		"iS": 193643,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-card/artwork/proposals.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2013/cnp-card/data.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/sets/2013/cnp-card/data.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/sets/2013/cnp-card/index.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/2013/cnp-card/index.html",
+		"oF": 3,
+		"oS": 0
+		},
 	"/sets/2013/cnp-compilations/artwork/cover-2013spring.png": {
 		"ft": 32768,
 		"iS": 54584,
@@ -382,6 +421,48 @@
 		"oF": 3,
 		"oS": 0
 		},
+	"/sets/2015/cnp-tote/artwork/final.jpg": {
+		"ft": 16384,
+		"iS": 453674,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/docs/2015/cnp-tote/artwork/final.jpg",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/sets/2015/cnp-tote/artwork/proposal.jpg": {
+		"ft": 16384,
+		"iS": 859208,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/docs/2015/cnp-tote/artwork/proposal.jpg",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/sets/2015/cnp-tote/data.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/sets/2015/cnp-tote/data.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/sets/2015/cnp-tote/index.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/2015/cnp-tote/index.html",
+		"oF": 3,
+		"oS": 0
+		},
 	"/sets/2015/cnp-webui2015/artwork/screenshot-1.png": {
 		"ft": 32768,
 		"iS": 2889336,
@@ -488,6 +569,37 @@
 		"oF": 3,
 		"oS": 0
 		},
+	"/sets/2016/fandom-publics/artwork/cover.png": {
+		"ft": 32768,
+		"iS": 217362,
+		"oA": 0,
+		"oAP": "/docs/2016/fandom-publics/artwork/cover.png",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sets/2016/fandom-publics/data.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/sets/2016/fandom-publics/data.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/sets/2016/fandom-publics/index.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/2016/fandom-publics/index.html",
+		"oF": 3,
+		"oS": 0
+		},
 	"/sets/2016/typedraw/artwork/screenshot-1.png": {
 		"ft": 32768,
 		"iS": 5503731,
@@ -527,6 +639,56 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/docs/2016/typedraw/index.html",
+		"oF": 3,
+		"oS": 0
+		},
+	"/sets/2017/lwodf/artwork/cover-final.jpg": {
+		"ft": 16384,
+		"iS": 752320,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/docs/2017/lwodf/artwork/cover-final.jpg",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/sets/2017/lwodf/artwork/cover-proposal.jpg": {
+		"ft": 16384,
+		"iS": 264889,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/docs/2017/lwodf/artwork/cover-proposal.jpg",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/sets/2017/lwodf/artwork/lwodf-v1.1.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/docs/2017/lwodf/artwork/lwodf-v1.1.pdf",
+		"oF": 2
+		},
+	"/sets/2017/lwodf/data.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/sets/2017/lwodf/data.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/sets/2017/lwodf/index.pug": {
+		"cB": 0,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/2017/lwodf/index.html",
 		"oF": 3,
 		"oS": 0
 		},
@@ -1190,7 +1352,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "logo-react",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 615285466.07323301
+	"lastBuiltDate": 615982546.12143004
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
