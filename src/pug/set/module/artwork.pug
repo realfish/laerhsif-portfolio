@@ -43,4 +43,14 @@ block setArtworkData
 			.set-artwork-group-list
 				each item in group.list
 					a.set-artwork-group-item(href=('./artwork/' + item.file))
-						img(src=('./artwork/' + item.file) alt=item.title)
+						//- noscript
+							img(
+								src=('./artwork/' + item.file) alt=item.title
+								width=item.width height=item.height
+							)
+						//- Ref: https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/
+						img(
+							src=`data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 ${item.width ? item.width : 0} ${item.height ? item.height : 0}'%3E%3C/svg%3E`
+							data-src=('./artwork/' + item.file) alt=item.title
+							width=item.width height=item.height
+						)
