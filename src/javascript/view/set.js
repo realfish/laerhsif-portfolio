@@ -25,7 +25,7 @@ $descHandle.addEventListener('click', function () {
 win.addEventListener('resize', _.debounce(function() {
 	let winWidth = win.innerWidth || doc.clientWidth || doc.body.clientWidth;
 	if (winWidth > 640 && isDescActive) {
-		console.log('bang');
+		// console.log('bang');
 		$desc.classList.remove('is-active');
 		bodyScrollLock.enableBodyScroll($descWrap);
 		isDescActive = false;
