@@ -215,6 +215,10 @@
 		background-color: fadeout(@bg-black, 5%);
 	}
 }
+.index-head-outline-item--unpub {
+	opacity: .2;
+	cursor : not-allowed;
+}
 /*--- Head END ---*/
 
 /*--- Archive ---*/
@@ -288,18 +292,24 @@
 	transition      :
 		border-color     .25s ease-out,
 		background-color .25s ease-out,
-		color            .25s ease-out;
+		color            .25s ease-out,
+		opacity          .25s ease-out;
 	
 	.ua-Pointer &:hover,
 	&:active {
 		border-color    : fadeout(@bg-black, 5%);
 		color           : @bg-main;
 		background-color: fadeout(@bg-black, 5%);
+		opacity         : 1;
 	}
 	
 	:not(html.ua-Pointer) & {
 		user-select: none;
 	}
+}
+.index-archive-item--unpub {
+	opacity: .2;
+	cursor : not-allowed;
 }
 
 .index-archive-item-titleEn {
@@ -414,6 +424,14 @@
 		border-color    : transparent;
 		color           : @bg-main;
 		background-color: transparent;
+	}
+	
+	&.index-archive-item::before {
+		opacity: 0;
+	}
+	.ua-Pointer &.index-archive-item:hover::before,
+	&.index-archive-item:active::before {
+		opacity: 1;
 	}
 }
 .index-archive-item--2017 {

@@ -21,4 +21,7 @@
 					h5.index-head-outline-title!= sec.title
 					nav.index-head-outline-list
 						each item in sec.list
-							a.index-head-outline-item(href=item.url)
+							if item.flag === 1
+								a.index-head-outline-item.index-head-outline-item--unpub(href='javascript:void(0)')
+							else
+								a.index-head-outline-item(href=item.url)
